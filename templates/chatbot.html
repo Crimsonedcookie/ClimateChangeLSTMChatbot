@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+  <body>
+      <div>
+            <ul>
+                <li>
+                    <nav class="main-nav">
+                        <a class="nav-item" href="/">Home</a>
+                        <a class="nav-item" href="/chatbot">Chatbot</a>
+                        <a class="nav-item" href="/sources">Sources</a>
+                    </nav>
+                </li>
+            </ul>
+      </div>
+      <div style="text-align: center;">
+            <h1 style="color: #354242">Talk to the Climate Chatbot!</h1>
+      </div>
+      <form method="post">
+        <div class="mb-3">
+          <div style="text-align:center">
+            <label>Enter your input</label>
+          </div>
+          <div style="text-align:center">
+              <textarea name="question">{{chatbot_question}}</textarea>
+          </div>
+        </div>
+        <div style="text-align:center">
+            <button type="submit" name="submit_button" class="btn btn-sm btn-primary mb-3">Get a response</button>
+        </div>
+        <hr>
+        <div class="card border-success mb-3" style="text-align:center">
+            <div class="card-header border-success">History</div>
+            <div class="card-body text-success">
+                <h5 class="card-title">Question and Answer</h5>
+                <p class="card-text">{{chatbot_question}}</p>
+                <p class="card-text">{{chatbot_output}}</p>
+            </div>
+            <div class="card-footer border-success">Posted at: {{date}}</div>
+        </div>
+<!--        <div class="container p-0 rounded-2" style="text-align:center">-->
+<!--            <div class="card bg-light mb-3">-->
+<!--                <div class="card-header text-end"><a class="btn btn-sm btn-danger"><strong>History</strong></a></div>-->
+<!--                <div class="card-body">-->
+<!--                    <div>-->
+<!--                        <h5 class="card-title">Answer</h5>-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <p>{{chatbot_question}}</p>-->
+<!--                        <p>{{chatbot_output}}</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="card-footer bg-transparent">Posted at: {{date}}</div>-->
+<!--            </div>-->
+<!--        </div>-->
+      </form>
+  </body>
+</html>
