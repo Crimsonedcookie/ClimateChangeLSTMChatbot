@@ -75,6 +75,6 @@ model.fit(x, y, epochs=epochs, batch_size=batch_size, validation_split=0.2, call
 
 #saving model :D
 
-model.save(model_dir/"word_lstm_v1.keras")
+model.save(model_dir/"word_lstm.keras")
 with open(model_dir/"word_vocabulary.json", "w", encoding="utf-8") as f:
     json.dump(vocabulary, f)

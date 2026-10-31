@@ -8,7 +8,7 @@ from keras.callbacks import EarlyStopping, ReduceLROnPlateau
 
 #get dataset ready
 
-path=keras.utils.get_file('climatechangeinfofile.txt','file:///Users/nathanramani/Downloads/climatechangeinfofile.txt')
+path=keras.utils.get_file('climatechangeinfofile.txt','file:///Users/nathanramani/Downloads/climatechangeinfofile .txt')
 
 with io.open(path, encoding="utf-8") as f:
     text=f.read().lower()

@@ -20,7 +20,7 @@ def chatbot():
         return render_template('chatbot.html')
     if request.method=="POST":
         chatbot_question=request.form["question"]
-        chatbot_output=generate_response(chatbot_question,model_type="character",length=200,diversity=0.75)
+        chatbot_output=generate_response(chatbot_question,model_type="word",length=200,diversity=0.75)
         print("Question:", chatbot_question)
         print("Generated:", chatbot_output)
         return render_template( "chatbot.html", chatbot_output=chatbot_output, chatbot_question=chatbot_question, date=datetime.now() )
