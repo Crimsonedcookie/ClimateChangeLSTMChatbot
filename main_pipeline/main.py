@@ -6,7 +6,7 @@ from datetime import datetime
 
 app=Flask("climatemanager")
 
-uri = "mongodb+srv://nramani27:tort524TOTE@climatechatbot.zizrvai.mongodb.net/?retryWrites=true&w=majority&appName=climatechatbot"
+uri = "mongodb+srv://nramani27:###@climatechatbot.zizrvai.mongodb.net/?retryWrites=true&w=majority&appName=climatechatbot"
 # Create a new client and connect to the server
 # client = MongoClient(uri)
 
